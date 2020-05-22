@@ -1,0 +1,9 @@
+---
+applications:
+  - name: log-spammer
+    memory: 64M
+    buildpacks:
+      - python_buildpack
+    command: python spam.py
+    no-route: true
+    health-check-type: process
